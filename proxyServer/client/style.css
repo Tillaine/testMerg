@@ -2,6 +2,14 @@ body {
     font-family: 'Quicksand', sans-serif;
     color: rgb(72, 72, 72);
   }
+
+  #infoContainer {
+    display: flex;
+  }
+
+  #header {
+    width: 100%
+  }
   
   .ReservationForm {
     border: rgb(228, 228, 228) solid 1px;
@@ -9,6 +17,7 @@ body {
     height: 363px;
     padding-left: 24px;
     padding-right: 24px;
+    position: sticky;
   }
   
   .ReservationFormWithCalculator {
@@ -347,9 +356,11 @@ body {
     flex-wrap: wrap;
   }
   
+  /* @media() */
   
   .chart {
     flex: 50%
+
     
   }
   
@@ -430,11 +441,42 @@ body {
   }
   
   .pagination {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    display: inline-block !important;
   }
+
+  
+
+  .pageLi {
+    display: inline-block !important;
+    background-color: transparent !important;
+    color: rgb(0, 132, 137) !important;
+    border-width: initial !important;
+    border-style: none !important;
+    border-radius: 50% !important;
+    background-color: transparent !important;
+    box-shadow: rgb(0, 132, 137) 0px 0px 0px 1px inset !important;
+    color: rgb(0, 132, 137) !important;
+    font: inherit inherit inherit inherit inherit inherit inherit inherit inherit !important;
+    text-decoration: none !important;
+}
+
+
+.pageLi {
+  flex:5%;
+  margin-left: 1em;
+  list-style: none;
+}
+
+.pageButton:hover {
+    text-align: center !important;
+    background-color: rgb(0, 132, 137) !important;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 16px !important;
+}
+
+.pageButton {
+  text-align: center !important;
+  background-color:rgb(255, 255, 255) !important;
+  color: rgb(0, 132, 137) !important;
+  border-radius: 16px !important;
+}
