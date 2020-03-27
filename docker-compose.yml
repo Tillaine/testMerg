@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  reviews:
+    build: Reviews/
+    depends_on:
+      - 'db'
+    ports:
+      - '3003:3003'
+
+  db:
+    build: Reviews/server/
+    ports: 
+      - "3306:3306"
+  
